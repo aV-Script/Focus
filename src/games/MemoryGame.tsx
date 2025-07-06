@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Box, Button, Stack } from '@mui/material';
+import { Typography, Box, Stack } from '@mui/material';
 
 const COLORS = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
 

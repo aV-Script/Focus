@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Box, Button } from '@mui/material';
+import { Typography, Box} from '@mui/material';
 
 export default function ReactionGame() {
   const [targetVisible, setTargetVisible] = useState(false);
@@ -13,7 +13,7 @@ export default function ReactionGame() {
     return () => {
       if (timerId) clearTimeout(timerId);
     };
-  }, []);
+  }, [timerId]);
 
   const scheduleTarget = () => {
     const delay = Math.random() * 3000 + 1000;
